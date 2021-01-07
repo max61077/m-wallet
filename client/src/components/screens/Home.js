@@ -58,7 +58,7 @@ const Home = () => {
             M.toast({html: 'Invalid PhoneNo', classes:"#e53935 red darken-1"})
             return
         } else if(Number(phoneNo) === state.phoneNo){
-            M.toast({html: "You can add money to your Number instead", classes:"#e53935 red darken-1"})
+            M.toast({html: "Please add money to your Number instead", classes:"#e53935 red darken-1"})
             return 
         }
 

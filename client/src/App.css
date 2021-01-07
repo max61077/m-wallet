@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+/* Navbar */
+a {
+  color: black !important;
+}
+
+.brand-logo, h2 {
+  font-family: 'Slabo 27px', serif;
+  margin-left: 20px;
+}
+
+.nav-wrapper > ul >li {
+  font-size: 5px;
+}
+
+.collection-item {
+  width: 100%;
+  padding: 20px !important;
+}
+
+/* signin/signup */
+
+.auth-card {
+  padding: 30px;
+  width: 45vw;
+  height: 70vh;
+  margin: 20px auto;
+  text-align: center;
+}
+.row {
+  margin-bottom: 0;
+}
+.auth-card input:focus {
+  border-bottom: 1px solid dodgerblue !important;
+  box-shadow: 0 1px 0 0 dodgerblue !important;
+}
+
+.auth-card > button {
+  margin: 10px 0;
+}
+
+/* Home */
+.home {
+  text-align: center;
+}
+
+.homeBtn {
+  width: 70vw;
+  margin: 10vh auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* profile */
+
+.profile {
+  text-align: center;
+}
+
+.profile > table {
+  margin: 7vh auto;
+  width: 70vw;
+}
+
+.profile > .profileBtn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inpUpdate {
+  margin: 0 auto;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+}
+
+/* Transactions */
+
+.trans {
+  text-align: center;
+}
+
+.trans-list {
+  margin: 5vh auto;
+  width: 50vw;
+}
+
+.trans-list > .collection {
+  border: none;
+}
+
+.trans-list > .collection > .collection-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.trans-list > .collection > .sent {
+  color: darkslategray;
+  border: 2px solid #f44336;
+  margin-top: 7px;
+  border-radius: 30px;
+
+}
+.trans-list > .collection > .received {
+  color: darkslategray;
+  border: 2px solid #00c853;
+  margin-top: 7px;
+  border-radius: 30px;
+}
+
+.timeStamp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeStamp > .time {
+  font-size: 11px;
+  color: grey;
+}
+
+
+
+/* mobile responsive */
+
+@media screen and (max-width: 1024px){
+  .auth-card {
+    width: 75vw;
+  }
+
+  .file-field > div {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 540px){
+  .home{
+    margin: 0;
+    padding: 0;
+  }
+
+  .home-card {
+    width: 100vw;
+  }
+
+  .nav-wrapper {
+    width: 100%;
+    padding: 0 !important;
+  }
+  .brand-logo{
+    font-size: 23px !important;
+    margin-left: 2px;
+  }
+
+  .nav-li {
+    font-size: 14px !important;
+  }
+  
+  .nav-search {
+    font-size: 15px !important;
+  }
+
+  .nav-btn {
+    font-size: 10px;
+    width: 60px;
+    height: 35px;
+    padding: 0 2px;
+    text-align: center;
+    margin-right: 2px;
+  }
+
+  .auth-card {
+    width: 95%;
+  }
+
+  .trans-list {
+    margin: 3vh auto;
+    width: 90%;
+  }
+
+  .profile > table {
+    margin: 7vh auto;
+    width: 100%;
+  }
+
+  .profileBtn > button {
+    width: 140px;
+    font-size: 13px;
+  }
+
+  .homeBtn > Button {
+    font-size: 18px;
+    width: 100px;
+    height: 50px;
+    /* padding: auto 2px; */
+    text-align: center;
+    margin-right: 2px;
+  }
+  
+}

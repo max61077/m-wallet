@@ -47,6 +47,7 @@ const Home = () => {
 
     const sendMoney = () => {
 
+
         if(isNaN(sendAmount) || sendAmount === '0' || !sendAmount || Number(sendAmount) < 0){
             M.toast({html: 'Invalid Amount', classes:"#e53935 red darken-1"})
             return
@@ -56,6 +57,9 @@ const Home = () => {
         } else if (!phoneNo || isNaN(phoneNo)){
             M.toast({html: 'Invalid PhoneNo', classes:"#e53935 red darken-1"})
             return
+        } else if(Number(phoneNo) === state.phoneNo){
+            M.toast({html: "You can add money to your Number instead", classes:"#e53935 red darken-1"})
+            return 
         }
 
         fetch('/sendmoney', {
